@@ -1,0 +1,65 @@
+1. Java
+// Definisi kelas Mahasiswa
+public class Main {
+    // Atribut kelas
+    public static class Mahasiswa {
+    private String nama;
+    private String nim;
+    private String jurusan;
+
+    // Konstruktor kelas untuk inisialisasi objek
+    public Mahasiswa(String nama, String nim, String jurusan) {
+        this.nama = nama;
+        this.nim = nim;
+        this.jurusan = jurusan;
+    }
+
+    // Metode untuk mendapatkan nama mahasiswa
+    public String getNama() {
+        return nama;
+    }
+
+    // Metode untuk mengubah nama mahasiswa
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    // Metode untuk menampilkan aktivitas belajar
+    public void belajar() {
+        System.out.println(nama + " sedang belajar.");
+    }
+}
+
+// Implementasi penggunaan kelas Mahasiswa
+
+    public static void main(String[] args) {
+        // Membuat objek Mahasiswa
+        Mahasiswa mahasiswa1 = new Mahasiswa("Lani", "453720", "Manajemen");
+        Mahasiswa mahasiswa2 = new Mahasiswa("Lita", "478227", "Kriminologi");
+
+        // Menggunakan metode objek
+        mahasiswa1.belajar();  // Output: Budi sedang belajar.
+        mahasiswa2.belajar();  // Output: Ani sedang belajar.
+    }
+}
+
+2.Python
+# Definisi kelas Mahasiswa
+class Mahasiswa:
+    # Konstruktor kelas untuk inisialisasi objek
+    def __init__(self, nama, nim, jurusan):
+        self.nama = nama
+        self.nim = nim
+        self.jurusan = jurusan
+
+    # Metode untuk menampilkan aktivitas belajar
+    def belajar(self):
+        print(f"{self.nama} sedang belajar.")
+
+# Implementasi penggunaan kelas Mahasiswa
+mahasiswa1 = Mahasiswa("Jisa", "2012348", "Akuntansi")
+mahasiswa2 = Mahasiswa("Lila", "3742382", "Agroteknologi")
+
+# Menggunakan metode objek
+mahasiswa1.belajar()  # Output: Budi sedang belajar.
+mahasiswa2.belajar()  # Output: Ani sedang belajar.
